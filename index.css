@@ -14,7 +14,7 @@ body {
 	height: 52px;
 }
 
-/*navbar*/
+/*navbar shows when scolling up*/
 #navbar {
   position: fixed;
   top: 0;
@@ -24,7 +24,7 @@ body {
   padding: 0;
   z-index: 1;
 }
-
+/*an X after clicking hamburger effect*/
 .navbar-toggler {
 	border: 0;
 }
@@ -32,6 +32,7 @@ body {
 .navbar-toggler>.close {
     display:inline;
 }
+
 .navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
     display:none;
 }
@@ -39,7 +40,7 @@ body {
 .navbar-nav li{
 	padding: 0.5rem;
 }
-/*end of navbar*/
+
 
 /*reset to default when hover*/
 #sourcesGithub:hover {
@@ -119,7 +120,7 @@ width: 100%;
 }
 
 
-
+/*images move from left to right*/
 #toolImgs {
 display: inline-block;
   padding: 20px;
