@@ -16,25 +16,26 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-white">
-  <a class="navbar-brand" href="#"><img src="./images/logo.png"></a>
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-faded navbar-toggleable-md w-100">
+  <a class="navbar-brand" href="#"><img id="logoSignature" src="./images/logo.png"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="my-1 mx-2 close">x</span>
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
     <ul class="navbar-nav w-100 justify-content-end">
       <li class="nav-item px-2">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link bg-light d-inline mb-1" href="#">Home</a>
       </li>
       <li class="nav-item px-2">
-        <a class="nav-link" href="#">Projects</a>
+        <a class="nav-link bg-light d-inline my-1" href="#projects-section">Projects</a>
       </li>
       <li class="nav-item px-2">
-        <a class="nav-link" href="#">Tools</a>
+        <a class="nav-link bg-light d-inline my-1" href="#toolText">Tools</a>
       </li>
       <li class="nav-item px-2">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link bg-light d-inline mt-1" href="#contactSection">Contact</a>
       </li>
     </ul>
   </div>
@@ -44,32 +45,144 @@
     <!-- Introduction Section -->
     <div class="jumbotron bg-white">
   <div class="d-flex justify-content-center">
-    <img src="./images/me.png" class="rounded-circle w-50 h-25">
+    <img src="./images/me.png" class="rounded-circle w-25 h-25">
   </div>  
   <h1 class="display-4 text-center">Jeric Moreno</h1>
-  <p class="lead text-center">| Full Stack Developer |</p>
+  <p class="lead text-center">| Full Web Stack Developer |</p>
   <hr class="my-4">
-  <p class="text-justify">Hi there! I'm Jeric Moreno a student in Zuitt Coding Bootcamp. I graduated BSIT(Bachelor of Science in Infomation Technology) and it gives me the opportunity to pursue my biggest dream to become a Software Developer. This field gives excitement and challenges to myself. Also I want to contribute my skills not only in our community but also globally.</p>
+  <p class="text-justify">Hi there! I'm Jeric Moreno a student in Zuitt Coding Bootcamp. I graduated BSIT(Bachelor of Science in Infomation Technology) and it gives me the opportunity to pursue my biggest dream to become a Software Developer. This field gives excitement and challenges to myself. Also I want to contribute my skills not only in our local community but also globally.</p>
 </div>
 <!-- end of introduction section -->
 
 <!-- main section -->
-<h2 class="text-center mb-5">Projects</h2>
+<h2 id="projects-section" class="text-center mb-5">Projects</h2>
 <div class="row">
+  <!-- 1st card -->
   <div class="col-md-6 order-2 order-md-1">
     <h3 class="text-center text-md-left">HTML,CSS & Bootstrap</h3>
-    <p>I made a static anime portfolio website by using the tools of HTML, CSS & Bootstrap.
+    <p class="text-justify">I made a responsive anime portfolio website by using the tools of HTML, CSS & Bootstrap.
     </p>
+    <div class="sources w-100 text-center text-md-left">
+     <span id="st" class="lead mr-3">Sources:</span>
+     <a href="https://github.com/cirejm07/moreno-s11" target="_blank"><i id="sourcesGithub" class="fab fa-github-square st"></i></a>
+     <span class="border-left border-dark mx-3"></span>
+     <a href="https://cirejm07.github.io/moreno-s11/" target="_blank"><i class="fas fa-external-link-alt st" ></i></a>
+     <span class="lead ml-5">Tools:</span>
+     <i id="resetIcon4" class="fab fa-html5 px-2"></i>
+     <i id="resetIcon5" class="fab fa-css3-alt px-2"></i>
+     <i id="resetIcon6" class="fab fa-bootstrap px-2"></i>
+     </div>
   </div>
-  <div class="col-md-6 order-1 order-md-2">
-    <img src="./images/projects-1.png" class="img-fluid">
+  <!-- end of 1st card -->
+
+  <!-- second card -->
+  <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center">
+    <img src="./images/projects-1.jpg" id="itachi" class="img-fluid mb-4">
   </div>
+  <!-- end of second card -->
 </div>
 <!-- end of main section -->
+<div class="row mt-5">
+  <!-- 3rd card -->
+  <div class="col-md-6">
+    <img src="./images/projects-2.jpg" id="reactImg" class="img-fluid h-100">
+  </div>
+  <!-- end 3rd card -->
+  <!-- 4th card -->
+  <div class="col-md-6 order-2 order-md-1">
+    <h3 class="text-center text-md-left my-4">React Frontend (Ecommerce)</h3>
+    <p class="text-justify">Disclaimer: This is for project purposes only. it is only intended for the use of capstone, and is not intended for clients.
+    </p>
+    <div class="sources w-100 text-center text-md-left">
+     <span class="lead mr-3">Tools:</span>
+     <i id="resetIcon" class="fab fa-react "></i>
+     <i id="resetIcon2" class="fab fa-bootstrap mx-3"></i>
+     <i id="resetIcon3" class="fab fa-js-square"></i>
+     </div>
+  </div>
+  <!-- end of 4th card -->
+</div>
 
+<!-- Tools -->
+<h2 id="toolText" class="text-center mt-5">Tools</h2>
+<div id="toolsContainer" class="mt-5">
+<div id="toolImgs" class="d-flex flex-row flex-wrap justify-content-center align-items-center h-100">
+<img width="80" src="./images/logo-mongodb.png" >
+<img width="80" src="./images/logo-nodejs.png" >
+<img width="80" src="./images/logo-expressjs.png" >
+<img width="80" src="./images/logo-react.png" >
+<img width="80" src="./images/logo-heroku.png" >
+<img width="80" src="./images/logo-postman.png" >
+<img width="80" src="./images/logo-sublime-text-3.png" >
+<img width="80" src="./images/logo-postman.png" >
+<img width="80" src="./images/logo-gitlab-ci-cd.png" >
+</div>
+</div>
+<!-- contact -->
+<div id="contactSection" class="row d-flex justify-content-around mt-5">
+    <div class="col-md-5 my-4">
+    <h2 class="text-center mb-3">Find Us!</h2>
+    <iframe class="h-100 w-100" id="gmap_canvas" src="https://maps.google.com/maps?q=bacolod%20city%20palm%20haven&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>     
+    </div>
+    <div class="col-md-5 my-4">
+      <h2 class="text-center mt-3">Let's Get Connected!</h2>
+      <form>
+        <div class="form-group">
+          <label for="fName">Full Name:</label>
+          <input type="text" name="name" id="fName" placeholder="e.g Jeric Moreno" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="txt-email">Email:</label>
+          <input type="email" name="email" id="txt-email" placeholder="name@example.com" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="txt-textarea">Message</label>
+          <textarea class="form-control" id="txt-textarea" rows="5">
+            
+          </textarea>
+        </div>
+        <button type="submit" class="btn btn-outline-success w-100">Submit</button>
+      </form>
+    </div>
+  </div>
+<!-- end of contact -->
+</div>
+<!-- end of container -->
 
- <!-- end of container --> </div>
+<!-- footer -->
+<footer class=" bg-info mt-5 d-md-flex justify-content-between py-4">
 
+  <p class="text-center text-white lead">Copyright &copy; 2021 Jeric Moreno. All Rights Reserved</p>
+  <div class="d-flex justify-content-center">
+    <a href="https://www.facebook.com/cireJ7/" target="_blank" class="mx-3">
+    <i class="fab fa-facebook-square"></i>
+    </a>
+    <a href="https://www.instagram.com/cirej7/" target="_blank"><i class="fab fa-instagram mx-3"></i></a>
+    <a href="https://www.linkedin.com/in/jeric-moreno-a8bb511ab/" target="_blank" class="mx-3">
+    <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://gitlab.com/cirejm" target="_blank" class="mx-3">
+    <i class="fab fa-gitlab"></i>
+    </a>
+    <a href="https://github.com/cirejm07" target="_blank" class="mx-3">
+   <i class="fab fa-github"></i>
+  </a>
+  </div>
+</footer>
+
+<!-- end of footer -->
+<script type="text/javascript">
+  var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
 <!-- js dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>

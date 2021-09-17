@@ -2,10 +2,148 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	 scroll-behavior: smooth;
 }
 
 body {
 	font-family: 'Roboto Slab', serif;
 }
 
-/*my signature brand*/
+/*logo*/
+#logoSignature {
+	height: 52px;
+}
+
+/*navbar*/
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.navbar-toggler {
+	border: 0;
+}
+
+.navbar-toggler>.close {
+    display:inline;
+}
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display:none;
+}
+
+.navbar-nav li{
+	padding: 0.5rem;
+}
+/*end of navbar*/
+
+/*reset to default when hover*/
+#sourcesGithub:hover {
+	color: black;
+	opacity: 1;
+}
+
+#resetIcon:hover,
+#resetIcon2:hover,
+#resetIcon3:hover,
+#resetIcon4:hover,
+#resetIcon5:hover,
+#resetIcon6:hover {
+	color: black;
+	opacity: 1;
+}
+/*end of reset*/
+
+/*cards*/
+#itachi{
+height: 22.6vh;
+width: 100%;
+}
+
+#itachi {
+	filter: brightness(50%);
+}
+#itachi:hover {
+	filter: brightness(75%);
+}
+
+#reactImg {
+	filter: brightness(50%);
+}
+#reactImg:hover {
+	filter: brightness(75%);
+}
+
+/*end of cards*/
+
+.fab {
+	font-size: 2rem;
+	color: black;
+}
+.fas {
+	font-size: 2rem;
+	color: black;
+}
+
+.st:hover{
+	color: black;
+	opacity: 0.9;
+	border-bottom: 3px solid green;
+}
+
+#toolText {
+	width: 20%;
+	animation: move 1s infinite ease-in-out;
+	margin: 0 auto;
+}
+
+@keyframes move {
+	0% { border-bottom: 5px dotted #BF1A2F; }
+	25% { border-bottom: 5px dashed #F00699 ; }
+	50% {border-bottom: 5px dotted #454E9E;}
+	75% { border-bottom: 5px dashed #018E42; }
+	100% { border-bottom: 5px dotted #F7D002; }
+}
+
+#toolsContainer {
+	background-image: url(./images/toolsbg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 25vh;
+
+}
+
+
+
+#toolImgs {
+display: inline-block;
+  padding: 20px;
+  color: white;
+  position: relative;
+  margin: 0 0 10px 0;
+}
+
+#toolImgs {
+	animation: move-in-steps 8s infinite;
+}
+
+@keyframes move-in-steps {
+  0% {
+   left: -13%;
+ 
+  }
+  100% {
+    left: 13%;
+  }
+}
+
+.fab:hover {
+	color: yellow;
+	opacity: 0.5;
+}
+
