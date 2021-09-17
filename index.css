@@ -14,6 +14,10 @@ body {
 	height: 52px;
 }
 
+#arrow-down {
+	height: 20vh;
+}
+
 /*navbar shows when scolling up*/
 #navbar {
   position: fixed;
@@ -60,10 +64,6 @@ body {
 /*end of reset*/
 
 /*cards*/
-#itachi{
-height: 22.6vh;
-width: 100%;
-}
 
 #itachi {
 	filter: brightness(50%);
@@ -96,19 +96,6 @@ width: 100%;
 	border-bottom: 3px solid green;
 }
 
-#toolText {
-	width: 20%;
-	animation: move 1s infinite ease-in-out;
-	margin: 0 auto;
-}
-
-@keyframes move {
-	0% { border-bottom: 5px dotted #BF1A2F; }
-	25% { border-bottom: 5px dashed #F00699 ; }
-	50% {border-bottom: 5px dotted #454E9E;}
-	75% { border-bottom: 5px dashed #018E42; }
-	100% { border-bottom: 5px dotted #F7D002; }
-}
 
 #toolsContainer {
 	background-image: url(./images/toolsbg.jpg);
@@ -120,31 +107,73 @@ width: 100%;
 }
 
 
-/*images move from left to right*/
-#toolImgs {
-display: inline-block;
-  padding: 20px;
-  color: white;
-  position: relative;
-  margin: 0 0 10px 0;
-}
-
-#toolImgs {
-	animation: move-in-steps 8s infinite;
-}
-
-@keyframes move-in-steps {
-  0% {
-   left: -13%;
- 
-  }
-  100% {
-    left: 13%;
-  }
-}
-
 .fab:hover {
 	color: yellow;
 	opacity: 0.5;
 }
 
+/*arrow aim*/
+
+
+
+
+#arrowAnim {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -150px;
+}
+
+.arrow {
+  width: 1vw;
+  height: 1vw;
+  border: 1vw solid;
+  border-color: black transparent transparent black;
+  transform: rotate(-135deg);
+}
+
+/*arrow sliding*/
+.contain {
+	height: 15vh;
+  width: 100%;
+  margin-bottom: 12rem;
+  position: relative;
+}
+
+.fa {
+  font-size: 42px;
+  color: green;
+  bottom: 27px;
+  position: absolute;
+  left: 50%;
+  margin-left: -18px;
+  animation-name:arrow;
+  animation-duration:1s;
+  animation-timing-function:linear;
+  animation-delay:0s;
+  animation-iteration-count:infinite;
+  animation-direction:normal;
+  animation-play-state:running;
+  -webkit-animation-name:arrow;
+  -webkit-animation-duration:1s;
+  -webkit-animation-timing-function:linear;
+  -webkit-animation-delay:0s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-direction:normal;
+  -webkit-animation-play-state:running;
+}
+
+}
+@keyframes arrow
+  {
+  0%   {bottom:0;}
+  75% {bottom:90px;}
+  100% {bottom:0;}
+  }
+@-webkit-keyframes arrow
+  {
+  0%   {bottom:0;}
+  75% {bottom:90px;}
+  100% {bottom:0;}
+  }
