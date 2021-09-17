@@ -63,6 +63,12 @@ body {
 }
 /*end of reset*/
 
+
+#fCard {
+  margin: 5rem 0;
+}
+
+
 /*cards*/
 
 #itachi {
@@ -97,14 +103,6 @@ body {
 }
 
 
-#toolsContainer {
-	background-image: url(./images/toolsbg.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 25vh;
-
-}
 
 
 .fab:hover {
@@ -177,3 +175,11 @@ body {
   75% {bottom:90px;}
   100% {bottom:0;}
   }
+
+#tools {
+  padding-top: 15rem;
+}
+
+#contact {
+  padding-top: 5rem;
+}
