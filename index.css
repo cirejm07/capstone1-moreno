@@ -139,9 +139,13 @@ body {
   position: relative;
 }
 
+
 .fa {
-  font-size: 42px;
-  color: green;
+  font-size: 60px;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(grey 50%, black);
   bottom: 27px;
   position: absolute;
   left: 50%;
